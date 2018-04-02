@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.hqu.monkey.experiment_2.gridLayout.GridActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1">
+
+            <GridLayout
+                android:id="@+id/GridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20sp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="5"
+                android:useDefaultMargins="true">
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="1" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="2" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="3" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="4" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="5" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="6" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="7" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="8" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="9" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="0" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="+" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="-" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="*" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="/" />
+
+                <Button
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:text="=" />
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:layout_margin="5sp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="返回" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

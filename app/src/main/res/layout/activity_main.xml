@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.hqu.monkey.experiment_2.mainAcitvity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/LineLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LineLayout"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:onClick="buttonLineLayoutClick"
+
+            />
+
+        <Button
+            android:id="@+id/RelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RelativeLayout"
+            android:textAllCaps="false"
+            android:layout_below="@+id/LineLayout"
+            android:layout_centerHorizontal="true"
+            android:onClick="buttonRelativeLayoutClick"/>
+
+        <Button
+            android:id="@+id/FrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FrameLayout"
+            android:textAllCaps="false"
+            android:layout_below="@+id/RelativeLayout"
+            android:layout_centerHorizontal="true"
+            android:onClick="buttonFrameLayoutClick"/>
+
+        <Button
+            android:id="@+id/TableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TableLayout"
+            android:textAllCaps="false"
+            android:layout_below="@+id/FrameLayout"
+            android:layout_centerHorizontal="true"
+            android:onClick="buttonTableLayoutClick"/>
+
+        <Button
+            android:id="@+id/GridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GridLayout"
+            android:textAllCaps="false"
+            android:layout_below="@+id/TableLayout"
+            android:layout_centerHorizontal="true"
+            android:onClick="buttonGridLayoutClick"/>
+
+        <TextView
+            android:text="姓名：陈艺俊"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20sp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

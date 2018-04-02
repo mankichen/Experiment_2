@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.hqu.monkey.experiment_2.frameLayout.FrameActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/FrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/igV_1"
+                    android:layout_width="320sp"
+                    android:layout_height="320sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/process"
+                    android:visibility="invisible"
+                    />
+
+                <ImageView
+                    android:id="@+id/igV_2"
+                    android:layout_width="280sp"
+                    android:layout_height="280sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/process"
+                    android:visibility="invisible"
+                    />
+
+                <ImageView
+                    android:id="@+id/igV_3"
+                    android:layout_width="240sp"
+                    android:layout_height="240sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/process"
+                    android:visibility="invisible"
+                    />
+
+                <ImageView
+                    android:id="@+id/igV_4"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/process"
+                    android:visibility="invisible"
+                    />
+
+                <ImageView
+                    android:id="@+id/igV_5"
+                    android:layout_width="160sp"
+                    android:layout_height="160sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/process"
+                    android:visibility="invisible"
+                    />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:layout_margin="5sp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="返回" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

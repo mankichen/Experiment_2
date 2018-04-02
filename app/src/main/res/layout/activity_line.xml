@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.hqu.monkey.experiment_2.lineLayout.LineActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水平布局"
+                android:onClick="buttonHorizontalClick"/>
+
+            <Button
+                android:id="@+id/btn_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="垂直布局"
+                android:onClick="buttonVerticalClick"/>
+
+            <Button
+                android:id="@+id/btn_left_alignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="靠左对齐"
+                android:onClick="buttonAlignLeftClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:layout_margin="5sp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="返回"
+                android:onClick="buttonComeBackClick"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
