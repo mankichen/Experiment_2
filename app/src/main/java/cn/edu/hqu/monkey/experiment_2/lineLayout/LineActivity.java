@@ -38,7 +38,7 @@ public class LineActivity extends AppCompatActivity implements LineContract.View
 
     @Override
     public void alignLeftLayout() {
-        mLinearLayout.setGravity(Gravity.START);
+        mLinearLayout.setGravity(Gravity.START|Gravity.CENTER);
     }
 
     @Override
